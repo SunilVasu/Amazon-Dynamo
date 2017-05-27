@@ -1,0 +1,9 @@
+ #!/bin/bash
+
+file_name=test_log.$(date "+%Y.%m.%d-%H.%M.%S").txt
+   for i in $(seq 10 $END);
+     do echo "Helloo" $i >> $file_name
+     echo "Next Line" $i >> $file_name;
+     #do echo $i >> log.txt; 
+   done
+

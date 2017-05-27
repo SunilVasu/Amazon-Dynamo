@@ -1,0 +1,5 @@
+adb -s emulator-5554 install -r /home/sunil/AndroidStudioProjects/GroupMessenger2/app/build/outputs/apk/app-debug.apk
+adb -s emulator-5556 install -r /home/sunil/AndroidStudioProjects/GroupMessenger2/app/build/outputs/apk/app-debug.apk
+adb -s emulator-5558 install -r /home/sunil/AndroidStudioProjects/GroupMessenger2/app/build/outputs/apk/app-debug.apk
+adb -s emulator-5560 install -r /home/sunil/AndroidStudioProjects/GroupMessenger2/app/build/outputs/apk/app-debug.apk
+adb -s emulator-5562 install -r /home/sunil/AndroidStudioProjects/GroupMessenger2/app/build/outputs/apk/app-debug.apk

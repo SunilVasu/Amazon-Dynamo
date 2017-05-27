@@ -1,0 +1,86 @@
+sunil@sunil-HP-Notebook:~/WorkSpace/Android$ adb devices
+List of devices attached
+emulator-5562	device
+emulator-5560	device
+emulator-5558	device
+emulator-5556	device
+emulator-5554	device
+
+logging:
+adb -s emulator-5562 logcat dalvikvm:* *:s GroupMessengerActivity:* *:s
+adb -s emulator-5560 logcat dalvikvm:* *:s GroupMessengerActivity:* *:s
+adb -s emulator-5558 logcat dalvikvm:* *:s GroupMessengerActivity:* *:s
+adb -s emulator-5556 logcat dalvikvm:* *:s GroupMessengerActivity:* *:s
+adb -s emulator-5554 logcat dalvikvm:* *:s GroupMessengerActivity:* *:s
+
+11108
+11112
+11116
+11120
+11124
+adb -s emulator-5554 logcat | grep --line-buffered 'GroupMessengerActivity11108'
+adb -s emulator-5556 logcat | grep --line-buffered 'GroupMessengerActivity11112'
+adb -s emulator-5558 logcat | grep --line-buffered 'GroupMessengerActivity11116'
+adb -s emulator-5560 logcat | grep --line-buffered 'GroupMessengerActivity11120'
+adb -s emulator-5562 logcat | grep --line-buffered 'GroupMessengerActivity11124'
+
+
+
+
+to run test:
+./groupmessenger2-grading.linux /home/sunil/AndroidStudioProjects/GroupMessenger2/app/build/outputs/apk/app-debug.apk
+
+./groupmessenger2-grading.linux -p 2
+./groupmessenger2-grading.linux -p 1
+./groupmessenger2-grading.linux -r 10
+
+
+PA3::
+
+./simpledht-grading.linux /home/sunil/AndroidStudioProjects/SimpleDht/app/build/outputs/apk/app-debug.apk
+
+
+PA4::
+
+./simpledynamo-grading.linux /home/sunil/AndroidStudioProjects/SimpleDynamo/app/build/outputs/apk/app-debug.apk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

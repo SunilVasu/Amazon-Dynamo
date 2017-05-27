@@ -1,0 +1,9 @@
+ #!/bin/bash
+
+file_name=logs/log.$(date "+%Y.%m.%d-%H.%M.%S").txt
+   for i in $(seq 20 $END);
+     do echo "ITERATION::" $i >> $file_name; 
+     ./simpledynamo-grading.linux /home/sunil/AndroidStudioProjects/SimpleDynamo/app/build/outputs/apk/app-debug.apk >> $file_name;
+     #do echo $i >> log.txt; 
+   done
+
